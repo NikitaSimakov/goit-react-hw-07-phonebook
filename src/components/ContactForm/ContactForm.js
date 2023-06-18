@@ -1,9 +1,9 @@
 // import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { nanoid } from 'nanoid';
+// import { nanoid } from 'nanoid';
 import css from './ContactForm.module.css';
-import { addContact } from 'redux/contactSlice';
+import { addContact } from 'redux/thunks';
 
 const ContactForm = () => {
   const dispatch = useDispatch();
@@ -18,7 +18,7 @@ const ContactForm = () => {
 
   const handleSubmit = event => {
     event.preventDefault();
-    dispatch(addContact({ name, number, id: nanoid(3) }));
+    dispatch(addContact({ name, number }));
     reset();
   };
 
