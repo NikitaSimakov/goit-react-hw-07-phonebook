@@ -1,7 +1,5 @@
-// import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-// import { nanoid } from 'nanoid';
 import css from './ContactForm.module.css';
 import { addContact } from 'redux/thunks';
 
@@ -63,10 +61,5 @@ const ContactForm = () => {
     </form>
   );
 };
-
-// ContactForm.propTypes = {
-//   onSubmit: PropTypes.func,
-//   handleSubmit: PropTypes.func,
-// };
 
 export default ContactForm;
