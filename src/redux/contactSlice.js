@@ -35,7 +35,7 @@ const contactsSlice = createSlice({
         state.contacts.push(payload.data);
       })
       .addMatcher(action => {
-        action.type.endsWith('/pendsing');
+        action.type.endsWith('/pending');
       }, handlePending)
       .addMatcher(action => {
         action.type.endsWith('/rejected');
