@@ -17,7 +17,6 @@ const ContactList = () => {
 
   const deleteContactHandler = event => {
     const { id } = event.currentTarget;
-    console.log(id);
     dispatch(deleteContact(id));
   };
 

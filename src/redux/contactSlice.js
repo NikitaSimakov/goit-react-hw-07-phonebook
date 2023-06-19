@@ -32,7 +32,6 @@ const contactsSlice = createSlice({
           );
           return;
         }
-        console.log(payload);
         state.contacts.push(payload.data);
       })
       .addMatcher(action => {
