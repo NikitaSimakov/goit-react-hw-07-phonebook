@@ -7,10 +7,15 @@ const Filter = () => {
   const dispatch = useDispatch();
   const [filter, setFilter] = useState('');
 
+  console.log(filter);
+
   const filterInputChange = event => {
-    const { value } = event.currentTarget;
-    setFilter(value);
-    dispatch(setFilterState({ filter: value }));
+    const filter = event.target.value;
+    setFilter(filter);
+    dispatch(setFilterState({ filter }));
+    // const { value } = event.currentTarget;
+    // setFilter(value);
+    // dispatch(setFilterState({ filter: value }));
   };
   return (
     <label className={css.filter_label}>
