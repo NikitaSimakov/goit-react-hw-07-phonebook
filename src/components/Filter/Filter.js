@@ -7,8 +7,6 @@ const Filter = () => {
   const dispatch = useDispatch();
   const [filter, setFilter] = useState('');
 
-  console.log(filter);
-
   const filterInputChange = event => {
     const filter = event.target.value;
     setFilter(filter);
