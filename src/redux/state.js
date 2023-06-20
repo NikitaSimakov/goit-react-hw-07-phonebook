@@ -3,4 +3,4 @@ export const contactsState = {
   isLoading: false,
   error: null,
 };
-export const filterState = '';
+export const filterState = { filter: '' };
