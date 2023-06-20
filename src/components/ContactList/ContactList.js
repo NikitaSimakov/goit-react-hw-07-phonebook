@@ -6,8 +6,8 @@ import { selectFilteredContact } from 'redux/selectors';
 const ContactList = () => {
   const dispatch = useDispatch();
   // const { filter } = useSelector(state => state);
-  const filter = useSelector(state => state.filter);
-  const { contacts } = useSelector(state => state.contacts);
+  // const filter = useSelector(state => state.filter);
+  // const { contacts } = useSelector(state => state.contacts);
 
   const filteredContacts = useSelector(selectFilteredContact);
   console.log(filteredContacts);
